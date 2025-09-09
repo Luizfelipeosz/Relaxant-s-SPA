@@ -1,0 +1,1378 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #dbe6f6, #c5796d);
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+}
+
+/* Mensagem inicial */
+.mensagem {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Layout dos cards */
+.container {
+    display: flex;                 /* 🔥 troca grid por flex para alinhar lado a lado */
+    justify-content: center;       /* centraliza os cards no meio */
+    flex-wrap: wrap;               /* permite quebrar linha no responsivo */
+    gap: 2rem;                     /* espaçamento entre os cards */
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+
+/* Estilo dos cards */
+.contato-card {
+    flex: 1 1 250px; /* 🔥 cards flexíveis: mínimo 250px, máximo automático */
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contato-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contato-card h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.contato-card h4 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.contato-card h5 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.contato-card h6 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+
+
+
+/* Botões dentro dos cards */
+.contato-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    background: #3498db;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contato-card a i {
+    margin-right: 8px;
+}
+
+.contato-card a:hover {
+    background: #217dbb;
+    transform: translateY(-2px);
+}
+
+/* Barra de navegação */
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.08rem;
+    border-radius: 12px 15px 0 0;
+    box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    z-index: 700;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(90deg, #3498db, #8e44ad);
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    margin: 0 12px;
+    border-radius: 10px;
+    font-weight: 800;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #3498db;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    transform: translateY(-2px);
+}
+h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    background-color: chartreuse;
+}
+h4 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    background-color: rgb(228, 0, 11);
+}
+h5 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0);
+}
+h6 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    background-color: rgb(55, 0, 255);
+}
+h3, h4, h5, h6 {
+    display: flex;
+    align-items: center;   /* alinha verticalmente */
+    justify-content: center; /* alinha horizontalmente */
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.hero {
+    background-image: url('1200 PNG-2024_SPA_Signature_Rituals_Products_02_CMYK.webp');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    padding: 100px 20px; /* Espaçamento interno para conteúdo visível */
+    color: white; /* Texto branco por cima da imagem */
+    text-align: center;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css"> 
+    <script src="contato.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="mensagem">
+        <p>Entre em contato comigo através das <strong>redes sociais</strong> ou por meio do <strong>WhatsApp!</strong></p>
+    </div>
+
+    <div class="container">
+        <div class="contato-card whatsapp">
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/5579920000385" target="_blank">
+                <i class="fab fa-whatsapp"></i> Clique aqui
+            </a>
+        </div>
+
+        <div class="contato-card instagram">
+            <h4>Instagram</h4>
+            <a href="https://www.instagram.com/luizfelipeosz/" target="_blank">
+                <i class="fab fa-instagram"></i> Clique aqui
+            </a>
+        </div>
+
+        <div class="contato-card github">
+            <h5>GitHub</h5>
+            <a href="https://github.com/Felpsd24" target="_blank">
+                <i class="fab fa-github"></i> Clique aqui
+            </a>
+        </div>
+
+        <div class="contato-card linkedin">
+            <h6>LinkedIn</h6>
+            <a href="https://www.linkedin.com/in/luiz-felipe-oliveira-souza-9a488b372/" target="_blank">
+                <i class="fab fa-linkedin"></i> Clique aqui
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="cabeçalho_menu">
+            <a class="cabeçalho_menu_link" href="Relaxant's.html">Relaxant's</a> 
+            <a class="cabeçalho_menu_link" href="home.html">Home</a>           
+            <a class="cabeçalho_menu_link" href="serviços.html">Serviços</a>
+            <a class="cabeçalho_menu_link" href="sobre.html">Sobre Nós</a>
+            <a class="cabeçalho_menu_link" href="contato.html">Contato</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cores */
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f2f9f9, #dbe6f6);
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #3498db, #8e44ad);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffdd59;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1587502536263-929e8eaa62c2?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+    position: relative;
+    padding: 2rem;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    max-width: 700px;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background: #3498db;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #217dbb;
+    transform: translateY(-2px);
+}
+
+/* Serviços */
+.services {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #3498db;
+}
+
+/* Sobre */
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #dbe6f6, #f9f9f9);
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 0.35rem;
+    margin-top: 3rem;
+}
+.hero {
+    background-image: url('1200 PNG-2024_SPA_Signature_Rituals_Products_02_CMYK.webp');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    padding: 100px 20px; /* Espaçamento interno para conteúdo visível */
+    color: white; /* Texto branco por cima da imagem */
+    text-align: center;
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxant's SPA - Bem-vindo</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Relaxant's SPA</h1>
+            <ul class="nav-links">
+                <li><a href="Relaxant's.html">Relaxant's</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero / Apresentação -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Relaxant's SPA</h2>
+            <p>Desde 2025, cuidando de você com massagens relaxantes, terapias corporais e um ambiente de paz e bem-estar.</p>
+            <a href="serviços.html" class="btn">Conheça nossos serviços</a>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Massagem Relaxante</h3>
+                <p>Alivie o estresse e recupere suas energias com técnicas exclusivas.</p>
+            </div>
+            <div class="card">
+                <h3>Aromaterapia</h3>
+                <p>O poder dos óleos essenciais para acalmar corpo e mente.</p>
+            </div>
+            <div class="card">
+                <h3>Tratamentos Corporais</h3>
+                <p>Cuidados especiais para revitalizar sua pele e promover bem-estar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="about">
+        <h2>Quem Somos</h2>
+        <p>
+            O Relaxant's SPA foi criado em 2025 com a missão de oferecer aos nossos clientes 
+            um espaço de tranquilidade e equilíbrio. Nossa equipe de profissionais 
+            especializados garante experiências únicas, unindo técnica e cuidado humano.
+        </p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Relaxant's SPA - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #dbe6f6, #c5796d);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 1.5rem;
+}
+
+/* =========================
+   HEADER COM IMAGEM DE FUNDO
+========================= */
+.header-hero {
+    background-image: url('1200 PNG-2024_SPA_Signature_Rituals_Products_02_CMYK.webp'); /* Caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin-bottom: 2.5rem;
+}
+
+/* Fundo escuro para legibilidade do texto */
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Títulos dentro do header */
+.header-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.header-hero h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.header-hero h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de seção */
+main h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 60px;
+    background: #3498db;
+    border-radius: 5px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 2.5rem;
+}
+
+section p {
+    font-size: 1.05rem;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 5px solid #27ae60;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    color: #2d3436;
+}
+
+/* =========================
+   SEÇÃO HERO (opcional)
+========================= */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+}
+
+.hero .hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #5c9a8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #4a8377;
+}
+
+/* =========================
+   MENU INFERIOR FIXO
+========================= */
+.rodape-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background: linear-gradient(90deg, #3498db, #8e44ad);
+    padding: 0.8rem 1rem;
+    border-top: 4px solid #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+.rodape-menu a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.rodape-menu a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #ecf0f1;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.rodape-menu a:hover {
+    color: #ecf0f1;
+}
+
+.rodape-menu a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    color: #ffffff;
+    background-color: #03d46c;
+    position: fixed;
+    bottom: 50px; /* para não sobrepor o menu */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+    .header-hero h1 {
+        font-size: 2rem;
+    }
+
+    .header-hero h2 {
+        font-size: 1.1rem;
+    }
+
+    .rodape-menu {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxant's SPA</title>
+    <link rel="stylesheet" href="Relaxant's.css">
+</head>
+<body>
+
+    <!-- Header com imagem de fundo -->
+    <header class="header-hero">
+        <div class="header-content">
+            <h1>Relaxant's SPA!</h1>
+            <h2>Oferecemos não apenas um local para relaxar, mas também cuidados especiais para seu corpo.</h2>
+            <h3>Explore nossos serviços e escolha a melhor opção para seu corpo e mente.</h3>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section>
+            <h2>Nossa Equipe de Profissionais</h2>
+            <p>
+                Nossa equipe é composta por terapeutas experientes e certificados, dedicados a proporcionar uma experiência única e personalizada para cada cliente. Estamos comprometidos com o seu bem-estar e satisfação.
+            </p>
+        </section>
+
+        <section>
+            <h2>Agende Sua Sessão Hoje!</h2>
+            <p>
+                Entre em contato conosco para agendar sua sessão ou para obter mais informações sobre nossos serviços. Estamos ansiosos para ajudá-lo a alcançar um estado de relaxamento e bem-estar total.
+            </p>
+        </section>
+
+        <!-- Seção Hero adicional (opcional) -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bem-vindo ao Relaxant's SPA</h2>
+                <p>Desde 2025, cuidando de você com massagens relaxantes, terapias corporais e um ambiente de paz e bem-estar.</p>
+                <a href="serviços.html" class="btn">Conheça nossos serviços</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Menu no rodapé -->
+    <aside>
+        <nav class="rodape-menu">
+            <a href="Relaxant's.html">Relaxant's</a>
+            <a href="home.html">Home</a>
+            <a href="serviços.html">Serviços</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </aside>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Relaxant's SPA. Todos os direitos reservados. Desenvolvido por Luiz Felipe!</p>
+    </footer>
+
+</body>
+</html>
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #dbe6f6, #c5796d);
+    color: #333;
+    padding: 2rem;
+}
+
+/* Layout principal */
+main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+h1::before, h2::before, h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 50px;
+    background: #3498db;
+    border-radius: 5px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 3rem;
+}
+
+/* Listas */
+ul1{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding-left: 0;
+}
+ul1 li {
+    background: #ffffff;
+    padding: 1.2rem 1.5rem;
+    border-left: 5px solid #e67e22;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+    /* animação */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.6s ease forwards;
+}
+    /* keyframes */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ul1 li:hover {
+    transform: translateY(-8px) scale(1.02);
+    background-color: #bbb8b8;
+}
+
+ul2 {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    padding-left: 0;
+}
+
+ul2 li {
+    background: #ffffff;
+    padding: 1.2rem 1.5rem;
+    border-left: 5px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* animação */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.6s ease forwards;
+}
+    /* keyframes */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ul2 li:hover {
+    transform: translateY(-8px) scale(1.02);
+    background-color: #bbb8b8;
+}
+
+
+ul li:hover {
+    transform: translateY(-4px);
+    background-color: #ecf0f1;
+}
+
+/* Ícones com Font Awesome */
+ul li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f192"; /* bullet icon */
+    color: #3498db;
+    font-size: 1rem;
+}
+
+/* Parágrafo da equipe */
+.equipe p {
+    font-size: 1.1rem;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 5px solid #27ae60;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    color: #2d3436;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
+footer {
+    text-align: center;
+    padding: 1.5px;
+    font-size: 0.85rem;
+    color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #03d46c;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    left: 0;
+}
+.rodape-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background: linear-gradient(90deg, #3498db, #8e44ad);
+    padding: 0.8rem 1rem;
+    border-top: 4px solid #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+.rodape-menu a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.rodape-menu a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #ecf0f1;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.rodape-menu a:hover {
+    color: #ecf0f1;
+}
+
+.rodape-menu a:hover::after {
+    width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .rodape-menu {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Serviços</title>
+    <link rel="stylesheet" href="serviços.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papLFzYtYTgHcGV7yJ09mFvYlfZ0NlMzYKh+ZBpEXcJ5MdROA1KZCw1E2szSPjE3cH0zZy+GBD3X5V2HjcjA4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Nossos Serviços</h1>
+            <ul1>
+                <li>Massagem Relaxante</li>
+                <li>Massagem Terapêutica</li>
+                <li>Tratamentos Faciais</li>
+                <li>Cuidados Corporais</li>
+                <li>Banhos de Ervas</li>
+                <li>Hidroterapia</li>
+                <li>Aromaterapia</li>
+                <li>Reflexologia</li>
+                <li>Yoga e Meditação</li>
+            </ul1>
+        </section>
+
+        <section>
+            <h2>Benefícios dos Nossos Serviços</h2>
+            <ul2>
+                <li>Redução do Estresse e Ansiedade</li>
+                <li>Alívio de Dores Musculares</li>
+                <li>Melhora da Circulação Sanguínea</li>
+                <li>Rejuvenescimento da Pele</li>
+                <li>Aumento da Flexibilidade e Mobilidade</li>
+                <li>Melhora do Sono e Relaxamento Profundo</li>
+                <li>Fortalecimento do Sistema Imunológico</li>
+                <li>Equilíbrio Emocional e Mental</li>
+            </ul2>
+        </section>
+        <section>
+            <h3>Nossa Equipe de Profissionais</h3>
+            <p>Nossa equipe é composta por terapeutas experientes e certificados, dedicados a proporcionar uma experiência única e personalizada para cada cliente. Estamos comprometidos com o seu bem-estar e satisfação.</p>
+</body>
+        </section>
+
+        <section>
+            <h2>Agende Sua Sessão Hoje!</h2>
+            <p>Entre em contato conosco para agendar sua sessão ou para obter mais informações sobre nossos serviços. Estamos ansiosos para ajudá-lo a alcançar um estado de relaxamento e bem-estar total.</p>
+        </section>
+    </main>
+
+    <aside>
+        <nav class="rodape-menu">
+            <a href="Relaxant's.html">Relaxant's</a>
+            <a href="Home.html">Home</a>
+            <a href="Serviços.html">Serviços</a>
+            <a href="Sobre.html">Sobre nós</a>
+            <a href="Contato.html">Contato</a>
+        </nav>
+    </aside>
+
+<footer>
+    <p>© 2025 Relaxant's SPA. Todos os direitos reservados. Desenvolvido por Luiz Felipe!</p>
+</footer>
+</html>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #dbe6f6, #c5796d);
+    color: #333;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+header h1::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background: #3498db;
+    bottom: 0;
+    left: 20%;
+    border-radius: 4px;
+}
+
+/* Container principal */
+main.sobre-container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Seções */
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 50px;
+    background: #3498db;
+    border-radius: 5px;
+}
+
+/* Introdução */
+.introducao p {
+    font-size: 1.15rem;
+    color: #2d3436;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 5px solid #27ae60;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Valores */
+.valores ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    padding-left: 0;
+}
+
+.valores ul li {
+    background: #ffffff;
+    padding: 1.2rem 1.5rem;
+    border-left: 5px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.valores ul li:hover {
+    transform: translateY(-4px);
+    background-color: #ecf0f1;
+}
+
+/* Missão & Visão */
+.missao-visao p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    background: #f9f9f9;
+    padding: 1.2rem;
+    border-left: 5px solid #8e44ad;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    color: #2d3436;
+}
+
+/* Equipe */
+.equipe p {
+    font-size: 1.1rem;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 5px solid #27ae60;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    color: #2d3436;
+    text-align: center;
+}
+
+/* Menu fixo inferior */
+.rodape-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background: linear-gradient(90deg, #3498db, #8e44ad);
+    padding: 0.8rem 1rem;
+    border-top: 4px solid #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+.rodape-menu a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.rodape-menu a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #ecf0f1;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.rodape-menu a:hover {
+    color: #ecf0f1;
+}
+
+.rodape-menu a:hover::after {
+    width: 100%;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #000000;
+    margin-top: 5rem;
+    margin-bottom: 4rem; /* espaço para o menu fixo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main.sobre-container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .rodape-menu {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .rodape-menu a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    .introducao p {
+        font-size: 1rem;
+    }
+
+    .valores ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem somos nós?</title>
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+    <header>
+        <h1>Quem Somos Nós</h1>
+    </header>
+
+    <main class="sobre-container">
+        <section class="introducao">
+            <p>
+                Somos um grupo de <strong>profissionais dedicados</strong>, unidos por amizade e pelo propósito
+                de criar experiências únicas. Nosso ambiente é acolhedor, calmo e pensado para que cada pessoa
+                se sinta <strong>confortável</strong>, <strong>valorizada</strong> e <strong>respeitada</strong>.
+            </p>
+        </section>
+
+        <section class="valores">
+            <h2>Nossos Valores</h2>
+            <ul>
+                <li>🤝 Amizade e colaboração no ambiente de trabalho</li>
+                <li>🌱 Tranquilidade e bem-estar em cada detalhe</li>
+                <li>🎯 Profissionalismo aliado à leveza</li>
+                <li>💡 Inovação e cuidado em cada projeto</li>
+            </ul>
+        </section>
+
+        <section class="missao-visao">
+            <h2>Missão</h2>
+            <p>
+                Oferecer serviços e experiências de qualidade em um espaço que transmite calma,
+                confiança e proximidade.
+            </p>
+
+            <h2>Visão</h2>
+            <p>
+                Ser reconhecidos como uma empresa que une <em>profissionalismo</em> e <em>amizade</em>,
+                criando um ambiente humano e inspirador.
+            </p>
+        </section>
+
+        <section class="equipe">
+            <h2>Nossa Equipe</h2>
+            <p>
+                Trabalhamos como uma verdadeira família: cada integrante é importante e contribui
+                para manter o equilíbrio entre profissionalismo e amizade.
+            </p>
+        </section>
+    </main>
+
+        <aside>
+        <nav class="rodape-menu">
+            <a href="Relaxant's.html">Relaxant's</a>
+            <a href="Home.html">Home</a>
+            <a href="Serviços.html">Serviços</a>
+            <a href="Sobre.html">Sobre Nós</a>
+            <a href="Contato.html">Contato</a>
+        </nav>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Relaxant's SPA – Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
