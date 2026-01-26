@@ -33,6 +33,4 @@ O objetivo do projeto é apresentar serviços de um spa de forma clara e intuiti
 ## 📸 Preview
 <img width="1304" height="768" alt="Captura de tela 2026-01-26 085845" src="https://github.com/user-attachments/assets/ddc878a0-b810-4e82-851d-bee25cc3005c" />
 
-Exemplo:
-<img width="1304" height="768" alt="image" src="https://github.com/user-attachments/assets/01439239-a3a0-49ab-910c-c6e54a762464" />
 
