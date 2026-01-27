@@ -31,6 +31,9 @@ O objetivo do projeto é apresentar serviços de um spa de forma clara e intuiti
 ---
 
 ## 📸 Preview
-<img width="1304" height="768" alt="Captura de tela 2026-01-26 085845" src="https://github.com/user-attachments/assets/ddc878a0-b810-4e82-851d-bee25cc3005c" />
+<img width="1304" height="768" alt="<img width="1304" height="768" alt="Captura de tela 2026-01-27 140451" src="https://github.com/user-attachments/assets/580e05ea-79f2-446d-99e0-be34e86bce32" />
+<img width="1304" height="768" alt="Captura de tela 2026-01-27 140430" src="https://github.com/user-attachments/assets/1be68bf5-a062-462f-9058-cdef6e61741c" />
+
+" src="https://github.com/user-attachments/assets/ddc878a0-b810-4e82-851d-bee25cc3005c" />
 
 
