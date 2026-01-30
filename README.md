@@ -18,7 +18,7 @@ O objetivo do projeto é apresentar serviços de um spa de forma clara e intuiti
 - HTML5  
 - CSS3  
 - JavaScript (ES6+)  
-- React.js *(se aplicável)*  
+- React.js  
 
 ---
 
