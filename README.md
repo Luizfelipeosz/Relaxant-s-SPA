@@ -29,9 +29,15 @@ O objetivo do projeto é apresentar serviços de um spa de forma clara e intuiti
 - Design moderno e focado em UX  
 - Componentes reutilizáveis  
 - Estrutura semântica e boas práticas de acessibilidade  
+  
 
 ---
+## Atualizações 
 
+- Maior responsividade
+- Resolução de problemas de compatibilidade em diferentes tipos de aparelhos
+- Criação da função de mensagem. Para troca de mensagem entre usuário e empresa.
+  
 ## 📸 Preview
 <img width="1304" height="768" alt="Captura de tela 2026-01-26 085845" src="https://github.com/user-attachments/assets/ddc878a0-b810-4e82-851d-bee25cc3005c" />
 
